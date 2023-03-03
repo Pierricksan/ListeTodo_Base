@@ -14,6 +14,4 @@ public class TodoRessource {
     public String hello() throws SQLException {
         return "Liste des todo à faire";
     }
-
-
 }

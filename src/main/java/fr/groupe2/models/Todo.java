@@ -4,13 +4,22 @@ package fr.groupe2.models;
 import java.util.Date;
 
 public class Todo {
+
     // attributs
+    private int id;
     private String titre, description;
     private Date date;
     private Urgence urgence;
     private User user;
 
     // getter and setter
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     public User getUser() {
         return user;
     }
@@ -18,7 +27,6 @@ public class Todo {
     public void setUser(User user) {
         this.user = user;
     }
-
 
     public Date getDate() {
         return date;
@@ -52,13 +60,13 @@ public class Todo {
         this.urgence = urgence;
     }
     // constructeur
-    public Todo(String titre, String description, Date date, User user, Urgence urgence) {
+    public Todo(int id, String titre, String description, Date date, User user, Urgence urgence) {
+        this.id = id;
         this.urgence = urgence;
         this.titre = titre;
         this.description = description;
         this.date = date;
         this.user = user;
-
     }
 
 

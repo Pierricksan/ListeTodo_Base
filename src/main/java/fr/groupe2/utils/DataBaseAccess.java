@@ -8,7 +8,7 @@ public class DataBaseAccess {
     // Attributs
     private static DataBaseAccess instance;
     private Connection connection;
-    private final String url = "jdbc:mysql://localhost:3306/todolistetp";
+    private final String url = "jdbc:mysql://localhost:3306/todolistetp?connectTimeout=3000&useSSL=false&allowPublicKeyRetrieval=true";
     private final String username = "root";
     private final String password = "";
     // Méthodes pour se connecter (JDBC)

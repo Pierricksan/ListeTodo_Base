@@ -4,6 +4,7 @@ package fr.groupe2.models;
 import java.util.Date;
 
 public class Todo {
+
     // attributs
     private int id;
     private String titre, description;
@@ -20,9 +21,6 @@ public class Todo {
         this.urgence = urgence;
         this.titre = titre;
         this.description = description;
-        this.date = date;
-        this.user = user;
-
     }
 
     // getters and setters

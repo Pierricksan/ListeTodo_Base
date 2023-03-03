@@ -10,10 +10,11 @@ public class DataGestion {
 
     private final Connection connection;
     // On lance une connection
-    // Le constrcuteur pour initilialiser la base de données
+    // Le constructeur pour initilialiser la base de données
     public DataGestion() throws SQLException {
         this.connection = DataBaseAccess.getInstance().getConnection();
     }
+
 
 }
 

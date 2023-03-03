@@ -11,7 +11,7 @@ import java.sql.SQLException;
 public class TodoRessource {
     @GET
     @Produces("text/plain")
-    public String hello() throws SQLException {
+    public String todolist() throws SQLException {
         return "Liste des todo à faire";
     }
 }

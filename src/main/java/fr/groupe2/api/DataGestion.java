@@ -1,6 +1,7 @@
 package fr.groupe2.api;
 
 
+import fr.groupe2.models.Todo;
 import fr.groupe2.utils.DataBaseAccess;
 
 import java.sql.*;
@@ -14,6 +15,7 @@ public class DataGestion {
     public DataGestion() throws SQLException {
         this.connection = DataBaseAccess.getInstance().getConnection();
     }
+
 
 }
 

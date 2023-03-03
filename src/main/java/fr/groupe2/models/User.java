@@ -8,6 +8,13 @@ public class User {
     private String prenom;
 
     // constructeur
+    public  User() {
+
+    }
+    public User(String nom, String prenom){
+        this.nom = nom;
+        this.prenom = prenom;
+    }
     public User(int id, String nom, String prenom){
         this.id= id;
         this.nom = nom;

@@ -13,7 +13,7 @@ public class Todo {
     private Urgence urgence;
 
     // constructeur
-    private  Todo() {
+    public Todo() {
 
     }
     public Todo(int id, String titre, String description, Date date, User user, Urgence urgence) {
@@ -59,5 +59,19 @@ public class Todo {
     }
     public void setUrgence(Urgence urgence) {
         this.urgence = urgence;
+    }
+
+    public void setUrgencyId(int urgencyId) {
+    }
+
+    public void setUserId(int userId) {
+    }
+
+    public int getUrgencyId() {
+        return 0;
+    }
+
+    public int getUserId() {
+        return 0;
     }
 }
